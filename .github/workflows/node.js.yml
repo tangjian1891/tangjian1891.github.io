@@ -1,31 +1,49 @@
+
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
+name: EASY CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [master]
   pull_request:
-    branches: [ "master" ]
+    branches: [master]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - name: Install dependencies  # 第二步，安装依赖
+        run: npm install
+      - name: Build                 # 第三步，打包代码
+        run: npm run build --if-present
+      - name: remove
+        run: rm -rf docs
+      - name: cp
+        run: cp -r -f .vitepress/dist  docs
+      - name: 开始推送
+        uses: github-actions-x/commit@v2.9
+        with:
+          github-token: ${{ secrets.GIT_KEY }}
+          push-branch: 'master'
+          commit-message: 'publish'
+          files: ./
+          email: tangjian1891@163.com
+          name: tangjian1891@163.com
+          
+        env:
+         CI: true
+         
