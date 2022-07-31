@@ -15,13 +15,14 @@ export default defineConfig({
       { text: "设计模式", link: "/设计模式/" },
       { text: "web相关知识", link: "/web相关知识/" },
       { text: "手写实现", link: "/手写实现/" },
-      {
-        text: "下拉",
-        items: [
-          { text: "链接1", link: ".." },
-          { text: "链接1", link: ".." },
-        ],
-      },
+      { text: "cook", link: "/cook/" },
+      // {
+      //   text: "下拉",
+      //   items: [
+      //     { text: "链接1", link: ".." },
+      //     { text: "链接1", link: ".." },
+      //   ],
+      // },
     ],
 
     sidebar: {
@@ -57,6 +58,14 @@ export default defineConfig({
           items:[
               {text:"nginx",link:"/web相关知识/nginx"}
           ]
+        }
+      ],
+      "/cook/":[
+        {
+          text:"调料",
+          items:[
+            {text:"面条",link:"/cook/noodles"}
+        ]
         }
       ]
       // "/手写实现/": [
