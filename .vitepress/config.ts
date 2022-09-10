@@ -56,6 +56,7 @@ export default defineConfig({
         {
           text:"服务器",
           items:[
+              {text:"linux",link:"/web相关知识/linux"},
               {text:"nginx",link:"/web相关知识/nginx"}
           ]
         }

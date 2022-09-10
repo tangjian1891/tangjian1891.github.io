@@ -9,8 +9,8 @@
     "serve": "vitepress serve"
   },
   "devDependencies": {
-    "@vue/theme": "^1.0.2",
-    "vitepress": "^1.0.0-alpha.4"
+    "@vue/theme": "^1.2.2",
+    "vitepress": "^1.0.0-alpha.13"
   },
   "dependencies": {
     "vue": "^3.2.37"
