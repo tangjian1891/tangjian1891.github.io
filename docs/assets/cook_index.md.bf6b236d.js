@@ -1,1 +1,0 @@
-import{_ as e,c as t,o,a}from"./app.dd0ab690.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"cook/index.md"}'),n={name:"cook/index.md"},s=a("p",null,"\u8C03\u6599",-1),r=[s];function c(d,_,i,p,l,m){return o(),t("div",null,r)}var x=e(n,[["render",c]]);export{u as __pageData,x as default};
