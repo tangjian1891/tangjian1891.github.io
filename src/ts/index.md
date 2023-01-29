@@ -1,0 +1,1 @@
+这是typescript的简介

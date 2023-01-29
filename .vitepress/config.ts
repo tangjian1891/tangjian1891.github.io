@@ -10,6 +10,7 @@ export default defineConfig({
     nav: [
       { text: "home", link: "/" },
       { text: "css", link: "/css/" },
+      {text:"ts",link:"/ts/"},
       { text: "node", link: "/node/" },
       { text: "算法", link: "/算法/" },
       { text: "设计模式", link: "/设计模式/" },
