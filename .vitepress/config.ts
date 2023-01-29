@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Blog",
   description: "个人得前端总结，html,css,js,vue,node",
-  srcDir: "src", //使用src作为默认目录
+  srcDir: "src", //使用src作为文档默认目录
   themeConfig: {
     // siteTitle:"个人博客",
     logo: "/assets/images/logo.jpg",
