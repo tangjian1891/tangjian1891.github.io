@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,b as l}from"./app.1a7b8d50.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"手写实现/call-apply-bind.md"}'),o={name:"手写实现/call-apply-bind.md"},p=l("",6),t=[p];function e(c,r,y,F,D,A){return a(),n("div",null,t)}const u=s(o,[["render",e]]);export{i as __pageData,u as default};

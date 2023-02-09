@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,b as l}from"./app.1a7b8d50.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"手写实现/promise.md"}'),p={name:"手写实现/promise.md"},o=l("",3),e=[o];function t(c,r,F,y,D,A){return a(),n("div",null,e)}const m=s(p,[["render",t]]);export{i as __pageData,m as default};

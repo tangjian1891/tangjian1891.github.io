@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,b as l}from"./app.1a7b8d50.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"设计模式/发布-订阅.md"}'),p={name:"设计模式/发布-订阅.md"},o=l("",2),t=[o];function e(c,r,D,F,y,A){return a(),n("div",null,t)}const _=s(p,[["render",e]]);export{i as __pageData,_ as default};
