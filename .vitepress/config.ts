@@ -16,7 +16,8 @@ export default defineConfig({
       { text: "设计模式", link: "/设计模式/" },
       { text: "web相关知识", link: "/web相关知识/" },
       { text: "手写实现", link: "/手写实现/" },
-      { text: "cook", link: "/cook/" },
+      { text: "cook", link: "/cook/noodles" },
+      { text: "book", link: "/book/" },
       // {
       //   text: "下拉",
       //   items: [
@@ -69,6 +70,14 @@ export default defineConfig({
           items:[
             {text:"面条",link:"/cook/noodles"}
         ]
+        }
+      ],
+      "/book/":[
+        {
+          text:"书籍介绍",
+          items:[
+            {text:"js高程/红宝书",link:"/book/js高程"}
+          ]
         }
       ]
       // "/手写实现/": [
