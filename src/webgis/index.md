@@ -12,12 +12,22 @@
 # 发展史
 1.
 
-# gis框架
+# webgis框架
 1. Leaflet （二维：传统）
 2. OpenLayers （二维：功能强大）
 3. Mapbox (二维：互联网展示型)
 4. cesium  (三维)
 
+# OGC（Open Geospatial Consortium开放地理空间信息联盟）三个标准
+1. WMTS （Web Map Tile Service Web瓦片地图），适用于数据相对静态或更新频率低的数据。
+2. WMS(Web Map Service Web地图服务)，动态地图服务，地图是服务器在每次接到客户请求时立刻生成的。返回的并非地图数据，而是地图图像，格式类型:PNG,GIS,JPEG,SVG,WEBCGM。由服务器端绘制地图。
+3. WFS(Web Feature Service)服务器将矢量数据返回给客户端。实际的地图是由客户端根据矢量数据绘制。
+
+# 地图缓存技术
+1. 栅格瓦片 (raster tile)  地图中所有的图层切分并存储为栅格格式的地图瓦片。（使用最广，技术成熟的底图技术）
+2. 矢量瓦片（vector tile） 矢量图层以矢量瓦片的（描述数据）形式进行切分和存储。体积小，传输快，客户端渲染。
 
 # 参考资料
 http://develop.smaryun.com/#/index 可做参考：集成OpenLayers、Leaflet、MapBoxGL、Cesium四大地图开源框架，同时接入了MapGIS服务器、大数据存储、大数据分析、智能GIS、云运维等云服务器产品提供的数据和功能服务，轻松实现地图二三维应用开发。
+
+
