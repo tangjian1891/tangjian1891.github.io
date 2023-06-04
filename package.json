@@ -10,9 +10,9 @@
   },
   "devDependencies": {
     "@vue/theme": "1.3.0",
-    "vitepress": "1.0.0-alpha.43"
+    "vitepress": "1.0.0-beta.1"
   },
   "dependencies": {
-    "vue": "3.2.45"
+    "vue": "^3.3.4"
   }
 }

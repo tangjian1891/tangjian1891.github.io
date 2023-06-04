@@ -18,6 +18,7 @@ export default defineConfig({
       { text: "手写实现", link: "/手写实现/" },
       { text: "cook", link: "/cook/noodles" },
       { text: "book", link: "/book/" },
+      {text:"webgis",link:'/webgis/'}
       // {
       //   text: "下拉",
       //   items: [
@@ -77,6 +78,16 @@ export default defineConfig({
           text:"书籍介绍",
           items:[
             {text:"js高程/红宝书",link:"/book/js高程"}
+          ]
+        }
+      ],
+      "/webgis/":[
+        {
+          text:"gis前言",
+          items:[
+            {text:"openlayers",link:"/webgis/openlayers"},
+            {text:"工具软件",link:"/webgis/tools"},
+
           ]
         }
       ]
