@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "i": "pnpm i",
     "dev": "vitepress dev --host",
     "build": "vitepress build",
     "serve": "vitepress serve"
