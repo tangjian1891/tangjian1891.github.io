@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as n}from"./app.1a7b8d50.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"手写实现/index.md"}'),o={name:"手写实现/index.md"},s=n("p",null,"手写实现",-1),r=[s];function c(d,_,i,p,l,m){return a(),t("div",null,r)}const x=e(o,[["render",c]]);export{u as __pageData,x as default};
