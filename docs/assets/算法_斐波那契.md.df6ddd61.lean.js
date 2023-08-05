@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,b as l}from"./app.1a7b8d50.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"算法/斐波那契.md"}'),p={name:"算法/斐波那契.md"},o=l("",5),e=[o];function c(t,i,C,A,r,y){return a(),n("div",null,e)}const d=s(p,[["render",c]]);export{_ as __pageData,d as default};

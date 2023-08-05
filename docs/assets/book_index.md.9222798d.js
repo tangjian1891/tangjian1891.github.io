@@ -1,0 +1,1 @@
+import{_ as e,v as t,b as s,F as o}from"./chunks/framework.caa0fbaf.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"book/index.md","filePath":"book/index.md"}'),n={name:"book/index.md"},a=o("p",null,"红宝书",-1),r=[a];function d(i,_,c,p,f,l){return t(),s("div",null,r)}const h=e(n,[["render",d]]);export{x as __pageData,h as default};

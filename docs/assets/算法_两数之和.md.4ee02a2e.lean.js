@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,b as l}from"./app.1a7b8d50.js";const D=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"算法/两数之和.md"}'),e={name:"算法/两数之和.md"},p=l("",6),o=[p];function t(c,r,i,C,A,y){return a(),n("div",null,o)}const d=s(e,[["render",t]]);export{D as __pageData,d as default};
