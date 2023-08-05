@@ -15,6 +15,8 @@ vscode
  6. TypeScript Vue Plugin (Volar)      此插件得作用在于激活.ts文件中对于.vue得相关支持，包括rename，import提示,路径检测.vue
  7. Code Runner     代码运行
  8. Code Spell Checker      命名检查
+ 9. GitLens — Git supercharged      vscode内置git只能做提交，拉取等操作。而聚焦到每一行blame，change，graph图，需要使用这个插件。
+I 
 
  ## 配置补充
  1. "editor.linkedEditing": true        此配置可以一定程度替换 Auto Rename Tag 插件，缺点是标签全部删除后无法同步再次输入同步。但是可以使用F2重构也行，稍微麻烦点。另外：Volar也需要开启此配置。
