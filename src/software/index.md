@@ -11,7 +11,7 @@ vscode
  2. Live Server         针对当前工作区/文件，启动一个server服务
  3. One Dark Pro        
  4. vscode-icons
- 5. Vue Language Features (Volar)      本身包含.vue文件高亮，对ts支持。[功能有哪些](https://github.com/vuejs/language-tools/discussions/53)
+ 5. Vue Language Features (Volar)      本身包含.vue文件高亮，对ts支持,即可关闭内置的typescript，采用takeover模式。[功能有哪些](https://github.com/vuejs/language-tools/discussions/53)
  6. TypeScript Vue Plugin (Volar)      此插件得作用在于激活.ts文件中对于.vue得相关支持，包括rename，import提示,路径检测.vue
  7. Code Runner     代码运行
  8. Code Spell Checker      命名检查
