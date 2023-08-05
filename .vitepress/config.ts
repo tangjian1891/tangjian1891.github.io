@@ -11,14 +11,15 @@ export default defineConfig({
       { text: "home", link: "/" },
       { text: "css", link: "/css/" },
       {text:"ts",link:"/ts/"},
-      { text: "node", link: "/node/" },
+      { text: "node", link: "/node/npm" },
       { text: "算法", link: "/算法/" },
       { text: "设计模式", link: "/设计模式/" },
       { text: "web相关知识", link: "/web相关知识/" },
       { text: "手写实现", link: "/手写实现/" },
       { text: "cook", link: "/cook/noodles" },
       { text: "book", link: "/book/" },
-      {text:"webgis",link:'/webgis/'}
+      {text:"webgis",link:'/webgis/'},
+      {text:"工具软件",link:'/software/'},
       // {
       //   text: "下拉",
       //   items: [
@@ -39,8 +40,8 @@ export default defineConfig({
       ],
       "/node/":[
         {
-          text:"api",
           items:[
+            { text: "npm", link: "/node/npm" },
             { text: "常见api", link: "/node/api" },
           ]
         }
@@ -89,6 +90,12 @@ export default defineConfig({
             {text:"工具软件",link:"/webgis/tools"},
 
           ]
+        }
+      ],
+      "/software/":[
+        {
+          text:"vscode",
+          
         }
       ]
       // "/手写实现/": [
