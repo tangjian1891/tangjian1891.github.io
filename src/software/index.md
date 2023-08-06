@@ -16,11 +16,13 @@ vscode
  7. Code Runner     代码运行
  8. Code Spell Checker      命名检查
  9. GitLens — Git supercharged      vscode内置git只能做提交，拉取等操作。而聚焦到每一行blame，change，graph图，需要使用这个插件。
-I 
+ 10. Prettier - Code formatter      编辑格式化，建议直接写入到prettier文件中，注意覆盖volar得默认格式化。
+ 
 
  ## 配置补充
  1. "editor.linkedEditing": true        此配置可以一定程度替换 Auto Rename Tag 插件，缺点是标签全部删除后无法同步再次输入同步。但是可以使用F2重构也行，稍微麻烦点。另外：Volar也需要开启此配置。
 
  
 
- 
+ ## 项目配置
+ 1. 
