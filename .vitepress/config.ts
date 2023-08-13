@@ -2,9 +2,20 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "Blog",
-  description: "个人得前端总结，html,css,js,vue,node",
+  titleTemplate:":title - Blog",
+  head:[
+    ['link',{href:"http://www.baidu.com"}]
+  ],
+  lang:"zh-CN",
+  description: "汤健得个人得前端总结，html,css,js,vue,node",
   srcDir: "src", //使用src作为文档默认目录
   themeConfig: {
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Evan You'
+    },
+    siteTitle: '汤健-技术总结（5年）',
+    aside:'left',
     // siteTitle:"个人博客",
     logo: "/assets/images/logo.jpg",
     nav: [
@@ -107,4 +118,7 @@ export default defineConfig({
       // ],
     },
   },
+  cleanUrls:true,
+  appearance:false,
+  lastUpdated:true,
 });
