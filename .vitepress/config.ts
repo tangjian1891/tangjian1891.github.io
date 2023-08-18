@@ -2,26 +2,28 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "Blog",
-  titleTemplate:":title - Blog",
-  head:[
-    ['link',{href:"http://www.baidu.com"}]
-  ],
-  lang:"zh-CN",
+  titleTemplate: ":title - Blog",
+  head: [["link", { href: "http://www.baidu.com" }]],
+  lang: "zh-CN",
   description: "汤健得个人得前端总结，html,css,js,vue,node",
   srcDir: "src", //使用src作为文档默认目录
   themeConfig: {
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You'
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2019-present Evan You",
     },
-    siteTitle: '汤健-技术总结（5年）',
-    aside:'left',
+    siteTitle: "汤健-技术总结（5年）",
+    aside: "left",
     // siteTitle:"个人博客",
     logo: "/assets/images/logo.jpg",
     nav: [
+      { text: "什么啊啊", link: "/qwer" },
+      { text: "工程化", link:"/工程化/introduction" },
+      {text:"js", link:"/js"},
+      {text:"html&css",link:"/html&css/html"},
       { text: "home", link: "/" },
       { text: "css", link: "/css/" },
-      {text:"ts",link:"/ts/"},
+      { text: "ts", link: "/ts/" },
       { text: "node", link: "/node/npm" },
       { text: "算法", link: "/算法/" },
       { text: "设计模式", link: "/设计模式/" },
@@ -29,8 +31,8 @@ export default defineConfig({
       { text: "手写实现", link: "/手写实现/" },
       { text: "cook", link: "/cook/noodles" },
       { text: "book", link: "/book/" },
-      {text:"webgis",link:'/webgis/'},
-      {text:"工具软件",link:'/software/'},
+      { text: "webgis", link: "/webgis/" },
+      { text: "工具软件", link: "/software/" },
       // {
       //   text: "下拉",
       //   items: [
@@ -39,23 +41,37 @@ export default defineConfig({
       //   ],
       // },
     ],
+ 
 
     sidebar: {
-      "/css/":[
-        {
-          text:"css概述",
-          items:[
-            {text:"盒模型",link:"/css/box-model"}
-          ]
-        }
+      "/工程化/":[
+        {text:"开始",items:[
+          {text:"介绍",link:"/工程化/introduction"}
+        ]},
+        {text:"还行",link:"/dwd"},
+        {text:"还行",link:"/dwd"},
+        {text:"还行",link:"/dwd"},
       ],
-      "/node/":[
+      "/html&css/":[
+        {text:"html",link:"/html&css/html"},
+        {text:"css",items:[
+          {text:"奇奇怪怪",link:"/html&css/css"}
+        ]}
+      ],
+      
+      "/css/": [
         {
-          items:[
+          text: "css概述",
+          items: [{ text: "盒模型", link: "/css/box-model" }],
+        },
+      ],
+      "/node/": [
+        {
+          items: [
             { text: "npm", link: "/node/npm" },
             { text: "常见api", link: "/node/api" },
-          ]
-        }
+          ],
+        },
       ],
       "/算法/": [
         {
@@ -67,48 +83,42 @@ export default defineConfig({
           ],
         },
       ],
-      "/web相关知识/":[
+      "/web相关知识/": [
         {
-          text:"服务器",
-          items:[
-              {text:"linux",link:"/web相关知识/linux"},
-              {text:"nginx",link:"/web相关知识/nginx"},
-              {text:"jenkins",link:"/web相关知识/jenkins"}
-          ]
-        }
+          text: "服务器",
+          items: [
+            { text: "linux", link: "/web相关知识/linux" },
+            { text: "nginx", link: "/web相关知识/nginx" },
+            { text: "jenkins", link: "/web相关知识/jenkins" },
+          ],
+        },
       ],
-      "/cook/":[
+      "/cook/": [
         {
-          text:"调料",
-          items:[
-            {text:"面条",link:"/cook/noodles"}
-        ]
-        }
+          text: "调料",
+          items: [{ text: "面条", link: "/cook/noodles" }],
+        },
       ],
-      "/book/":[
+      "/book/": [
         {
-          text:"书籍介绍",
-          items:[
-            {text:"js高程/红宝书",link:"/book/js高程"}
-          ]
-        }
+          text: "书籍介绍",
+          items: [{ text: "js高程/红宝书", link: "/book/js高程" }],
+        },
       ],
-      "/webgis/":[
+      "/webgis/": [
         {
-          text:"gis前言",
-          items:[
-            {text:"openlayers",link:"/webgis/openlayers"},
-            {text:"工具软件",link:"/webgis/tools"},
-
-          ]
-        }
+          text: "gis前言",
+          items: [
+            { text: "openlayers", link: "/webgis/openlayers" },
+            { text: "工具软件", link: "/webgis/tools" },
+          ],
+        },
       ],
-      "/software/":[
+      "/software/": [
         {
-          text:"vscode",
-          
-        }
-      ]
+          text: "vscode",
+        },
+      ],
       // "/手写实现/": [
       //   { text: "Promise", link: "/手写实现/promise" },
       //   { text: "call-apply-bind", link: "/手写实现/call-apply-bind" },
@@ -118,7 +128,7 @@ export default defineConfig({
       // ],
     },
   },
-  cleanUrls:true,
-  appearance:false,
-  lastUpdated:true,
+  cleanUrls: true,
+  appearance: false,
+  lastUpdated: true,
 });

@@ -38,3 +38,13 @@ npx husky add ./husky/pre-commit "npm run test"
 这样你做git commit提交时，会自动触发./husky/pre-commit这个shell文件脚本，文件脚本中执行了npm run test 执行，这样在git commit时，就相当于自动执行 npm run test 脚本
 
 4. 我们得目标，希望每次提交时，手动执行一下eslint 和prettier格式化最好
+
+
+
+
+## prettier
+1. 格式化代码工具。 可以使用editors编辑。vscode中得prettier。
+2. 可以使用cli[prettier . --write](https://prettier.io/docs/en/cli)
+3. 查询逻辑，从vscode用户配置，到.prettierrc配置。
+4. Prose Wrap 仅适用于 markdown   https://github.com/prettier/prettier/issues/15225
+
