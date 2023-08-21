@@ -33,6 +33,7 @@
 
 
 前端工程化：（基于node）提升效率和质量。涵盖“测试”，“构建”，“部署”，“监控”
+
 代码控制：git+prettier+eslint
 测试：增加测试用例。
 构建工具：代码兼容性，压缩混淆，自动hash。
@@ -41,7 +42,17 @@ CI&CD：测试+部署集成到开发工作流中，减少发布风险，提高�
  
 
  1. prettier
+ 介绍：code formatter，格式化。
+ [cli使用](https://prettier.io/docs/en/cli)：npx prettier . --write
+ 配置文件：
+ 与eslint集成：
+
+ 冲突：prettier:quote 双引号,eslint:单引号
+ 
  2. eslint
+ linter：静态代码分析工具，检查源代码中的潜在风险和问题。帮助编写最佳实践且风格一致的代码。包括：语法，命名，代码风格、
+ 介绍：捕获静态bug代码，修正代码风格。
+ 配置文件中：一定要有parserOptions.ecmaVersion,否则“Unexpected token”无法解析
  3. husky+lint-staged
 
 
