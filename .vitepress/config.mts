@@ -17,10 +17,10 @@ export default defineConfig({
     // siteTitle:"个人博客",
     logo: "/assets/images/logo.jpg",
     nav: [
-      { text: "什么啊啊", link: "/qwer" },
-      { text: "工程化", link:"/工程化/introduction" },
-      {text:"js", link:"/js"},
-      {text:"html&css",link:"/html&css/html"},
+      { text: "书籍知识", link: "/book-summary/" },
+      { text: "工程化", link: "/工程化/introduction" },
+      { text: "js", link: "/js" },
+      { text: "html&css", link: "/html&css/html" },
       { text: "home", link: "/" },
       { text: "css", link: "/css/" },
       { text: "ts", link: "/ts/" },
@@ -41,24 +41,21 @@ export default defineConfig({
       //   ],
       // },
     ],
- 
 
     sidebar: {
-      "/工程化/":[
-        {text:"开始",items:[
-          {text:"介绍",link:"/工程化/introduction"}
-        ]},
-        {text:"还行",link:"/dwd"},
-        {text:"还行",link:"/dwd"},
-        {text:"还行",link:"/dwd"},
+      "/book-summary/": [
+        { text: "JavaScript介绍", link: "./introduce" },
+        { text: "语言语法", link: "./grammar" },
       ],
-      "/html&css/":[
-        {text:"html",link:"/html&css/html"},
-        {text:"css",items:[
-          {text:"奇奇怪怪",link:"/html&css/css"}
-        ]}
+      "/工程化/": [
+        { text: "开发规范", link: "./开发规范" },
+        { text: "还行", link: "/dwd" },
       ],
-      
+      "/html&css/": [
+        { text: "html", link: "/html&css/html" },
+        { text: "css", items: [{ text: "奇奇怪怪", link: "/html&css/css" }] },
+      ],
+
       "/css/": [
         {
           text: "css概述",

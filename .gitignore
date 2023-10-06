@@ -89,8 +89,8 @@ dist
 # public
 
 # vuepress build output
-.vitepress/dist
-.vitepress/cache
+.vitepress/dist/
+.vitepress/cache/
 
 # Serverless directories
 .serverless/
@@ -104,3 +104,4 @@ dist
 # TernJS port file
 .tern-port
 yarn.lock
+ 
