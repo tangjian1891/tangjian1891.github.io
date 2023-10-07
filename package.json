@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "i": "pnpm i",
-    "dev": "vitepress dev --host",
-    "build": "vitepress build",
+    "docs:dev": "vitepress dev --host",
+    "docs:build": "vitepress build",
     "serve": "vitepress serve"
   },
   "devDependencies": {
