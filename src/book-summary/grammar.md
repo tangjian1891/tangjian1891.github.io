@@ -52,3 +52,6 @@
 7. **数据类型（7种）**
     - 原始类型Primitive。Null、Undefined、Boolean、String、Number、Symbol。6种
     - 复杂数据类型Object。无序键值对集合。1种
+   1. undefined、null是假值。
+   2. 永远不要手动给变量赋值undefined。这个值的目的是为了明确空对象指针null和未初始化变量的区别。
+   3. Boolean类型值只有true、false两个。但是所有其他类型的值，都有布尔值的等价形式。调用Boolean函数即可。false、""（空字符串）、null、undefined、0、NaN
